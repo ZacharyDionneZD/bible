@@ -39,9 +39,6 @@ def get_chapiter_lines(lines, line):
 
 	return chapiter_lines
 
-def get_output_content(template_data, chapiter_name, chapiter_lines):
-	chapiter_text = "".join(chapiter_lines)
-
 	return template_data.replace("@@chapiterName", chapiter_name).replace("@@content", chapiter_text)
 
 def generate(book_path, output_path_template):

@@ -19,7 +19,7 @@ def get_li_tags(chapiters_count):
 	for chapiter_number in range(1, chapiters_count + 1):
 		chapiter_number_text = str(chapiter_number)
 
-		li_tags.append("\t\t\t<li><a href=\"./" + chapiter_number_text + "/\">" + chapiter_number_text +"</a></li>")
+		li_tags.append("\t\t\t\t<li><a href=\"./" + chapiter_number_text + "/\">" + chapiter_number_text +"</a></li>")
 
 	return li_tags
 
@@ -35,10 +35,12 @@ def generate(book_path, book_name, output_path):
 	</head>
 	<body>
 		<h1>$book_name</h1>
-		<h2>Chapitres</h2>
-		<ul>
+		<nav>
+			<h2>Chapitres</h2>
+			<ul>
 $content
-		</ul>
+			</ul>
+		</nav>
 	</body>
 </html>""")
 
