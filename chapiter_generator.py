@@ -14,9 +14,6 @@ def get_chapiter_number(chapiter_name):
 
 	return match.group(1)
 
-def get_output_path(output_path_template, chapiter_number):
-	return output_path_template.replace("@@chapiterNumber", chapiter_number)
-
 def get_chapiter_lines(lines, line):
 	chapiter_lines = []
 
