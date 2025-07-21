@@ -36,8 +36,6 @@ def get_chapiter_lines(lines, line):
 
 	return chapiter_lines
 
-	return template_data.replace("@@chapiterName", chapiter_name).replace("@@content", chapiter_text)
-
 def generate(book_path, output_path_template):
 	template = Template("""<!DOCTYPE html>
 <html lang="fr">
